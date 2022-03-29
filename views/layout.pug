@@ -13,5 +13,12 @@ html
           if user
             li.nav-item
               a.nav-link(href="#") Hello #{user.first_name}
+            li.nav-item
+              a.nav-link(href="logout") Logout
+          else
+            li.nav-item
+              a.nav-link(href="/login") Login
+            li.nav-item
+              a.nav-link(href="/register") Register
     div.container
       block content

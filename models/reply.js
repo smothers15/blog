@@ -21,6 +21,7 @@ module.exports = (sequelize, DataTypes) => {
         commented_on: DataTypes.DATE,
         parent_comment_id: DataTypes.INTEGER,
         article_id: DataTypes.INTEGER,
+        is_deleted: DataTypes.BOOLEAN,
         commentedAgo: {
             type: DataTypes.VIRTUAL,
             get(){
